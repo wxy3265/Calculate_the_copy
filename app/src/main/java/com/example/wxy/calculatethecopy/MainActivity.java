@@ -39,6 +39,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         TextView editText = (TextView) findViewById(R.id.edittext);//遍数输入View
         TextView editText1 = (TextView) findViewById(R.id.edittext1);//天数输入View
 
+        float zs;
+        final int YB = 4000;//一遍的字数
+        final int SP = 40;//每分钟抄写字数
+
         switch (v.getId()) {
             case R.id.button_add:
                 bs ++;
@@ -65,8 +69,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 editText1.setText(String.valueOf(days));
                 break;
             case  R.id.button:
-                Toast.makeText(MainActivity.this, "You Clicked 计算",
-                        Toast.LENGTH_SHORT).show();
+                zs = bs *YB;
+                zs /= SP;
+                zs /= 60;
+                zs /= days;
+                textView.setText("每天需要抄写约" + String.valueOf(zs) + "小时");
                 break;
             default:
                 break;
