@@ -18,13 +18,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="遍数"
-        />
+        /><!-->遍数输入提示<-->
     <TextView
     android:id="@+id/edittext"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="1"
-    android:textSize="24dp"
+    android:textSize="20dp"
     android:textColor="#000000"
     /><!-->遍数输入<-->
     <LinearLayout
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="+"
-            android:textSize="24dp"
+            android:textSize="20dp"
             />
         <Button
             android:id="@+id/button_less"
@@ -45,20 +45,20 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="-"
-            android:textSize="24dp"
+            android:textSize="20dp"
             />
     </LinearLayout><!-->遍数调节<-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="天数"
-        />
+        /><!-->天数输入提示<-->
     <TextView
         android:id="@+id/edittext1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="3"
-        android:textSize="24dp"
+        android:textSize="20dp"
         android:textColor="#000000"
         /><!-->天数输入<-->
     <LinearLayout
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="+"
-            android:textSize="24dp"
+            android:textSize="20dp"
             />
         <Button
             android:id="@+id/button_less1"
@@ -79,9 +79,77 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="-"
-            android:textSize="24dp"
+            android:textSize="20dp"
             />
     </LinearLayout><!-->天数调节<-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一遍字数"
+        /><!-->字数输入提示<-->
+    <TextView
+        android:id="@+id/edittext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4000"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        /><!-->字数输入<-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_add2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/button_less2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="20dp"
+            />
+    </LinearLayout><!-->字数调节<-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="每分钟抄写字数"
+        /><!-->速度输入提示<-->
+    <TextView
+        android:id="@+id/edittext3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="40"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        /><!-->速度输入<-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_add3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/button_less3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="20dp"
+            />
+    </LinearLayout><!-->速度调节<-->
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
